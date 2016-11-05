@@ -1,67 +1,84 @@
 Please follow the instructions to start with gradle scripts
 first as usual download the gradle package or zip from below link 
 https://github.com/spring-guides/gs-gradle/archive/master.zip
-or if you are android developer then u already have that in this location 
+or if you are an android developer then u already have that in this location 
 C:\Program Files\Android\Android Studio\gradle\gradle-2.14.1 
-or somewhere u choose to install the setup. so 
+or somewhere you choose to install the setup. so 
 go ahead and set the environment variable first here 
 Control Panel\System and Security\System - >advance system settings->environment variable->
-in system variables choose "path" and click on edit and paste the gradle install location in end
-okeh i know u guys know these from 10th standard but still i gotta tell you.
+in the system variables choose "path" and click on edit and paste the gradle install location in the end
+okeh I know you guys have did this before but still i gotta tell you.
 now check if gradle is installed or not 
 simple type in cmd "gradle" and you will see this
+________________________________________________________
 
-Total time: 3.103 secs
+
 E:\courses\gradle\gradle programs\hello world>gradle
 :help
 
+
 Welcome to Gradle 2.14.1.
+
 
 To run a build, run gradle <task> ...
 
+
 To see a list of available tasks, run gradle tasks
+
 
 To see a list of command-line options, run gradle --help
 
+
 To see more detail about a task, run gradle help --task <task>
 
-BUILD SUCCESSFUL
 
+BUILD SUCCESSFUL
+______________________________________________________________
 and yes now you are really good to go.
-To run your first program  choose your favourite editor, mine is notepad++.
+To run your first program  choose your favorite editor, mine is notepad++.
 create a file and paste this hello script.
-------------------------------------------
+_____________________________________________________________
+
 
 task hello{
 
-	description "your first task"
-	group "hello world"
-	doLast{
-			println "this is going to be my first program"
-	
-	}
+
+description "your first task"
+group "hello world"
+doLast{
+println "this is going to be my first program"
+
 
 }
 
-------------------------------------------
 
+}
+
+
+_______________________________________________________________________
 and save as build.gradle always, now open the cmd from the same directory where you have saved this build.gradle file by pressing shift+ right click and type gradle tasks
+_____________________________________________________________________________
+
 
 E:\courses\gradle\gradle programs\hello world>gradle tasks
 :tasks
 
+
 ------------------------------------------------------------
 All tasks runnable from root project
 ------------------------------------------------------------
+
 
 Build Setup tasks
 -----------------
 init - Initializes a new Gradle build. [incubating]
 wrapper - Generates Gradle wrapper files. [incubating]
 
+
 Hello world tasks
 -----------------
 hello - your first task
+
 
 Help tasks
 ----------
@@ -70,6 +87,7 @@ t 'hello world'.
 components - Displays the components produced by root project 'hello world'. [in
 cubating]
 dependencies - Displays all dependencies declared in root project 'hello world'.
+
 
 dependencyInsight - Displays the insight into a specific dependency in root proj
 ect 'hello world'.
@@ -80,23 +98,31 @@ projects - Displays the sub-projects of root project 'hello world'.
 properties - Displays the properties of root project 'hello world'.
 tasks - Displays the tasks runnable from root project 'hello world'.
 
+
 To see all tasks and more detail, run gradle tasks --all
+
 
 To see more detail about a task, run gradle help --task <task>
 
+
 BUILD SUCCESSFUL
 
-Total time: 3.141 secs
-
-
-you can see our Hello world task group above. now lets run this by typing gradle <task name here> . for ex gradle hello 
 
 Total time: 3.141 secs
+
+
+______________________________________________________________________________
+
+
+you can see our Hello world task group above. now lets run this by typing gradle <task name here> . 
+
+
 E:\courses\gradle\gradle programs\hello world>gradle hello
 :hello
 this is going to be my first program
 
+
 BUILD SUCCESSFUL
 
-okeh now you have successfully completed your first script. congratulations!!!!
 
+okeh now you have successfully completed your first script. congratulations!!!!
