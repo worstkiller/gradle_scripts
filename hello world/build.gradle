@@ -1,0 +1,15 @@
+/* hey guys this is first gradle script, 
+   before you begin please follow the
+   readme.md file in project root for installations and other instructions. !!enjoy!!
+*/
+
+task hello{
+
+	description "your first task"
+	group "hello world"
+	doLast{
+			println "this is going to be my first program"
+	
+	}
+
+}
