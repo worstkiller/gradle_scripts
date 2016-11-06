@@ -1,0 +1,22 @@
+/*
+this example shows how we can define the variables in gradle.
+dynamic type conversion is one of cool features of gradle.
+you will love it
+*/
+
+task variables{
+description "defining the variables and dynamic type conversion"
+group "variables group"
+doLast{
+def x = 1
+println x
+x = new java.util.Date()
+println x
+x = -3.333
+println x
+x = false
+println x
+x = "Hello variables"
+println x
+}
+}
