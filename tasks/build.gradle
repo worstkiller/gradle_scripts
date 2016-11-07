@@ -1,0 +1,39 @@
+/*
+
+tasks in gradle 
+
+*/
+
+//first type of task
+
+task java {
+
+	println "java is running"
+
+}
+
+//second type of task
+
+task "groovy" {
+
+	println "groovy is running"
+	
+}
+
+//third type of task
+
+task ("scala") {
+
+	println "scala is running"
+
+}
+
+//this adds the action to the task call "doLast", the upper calls are called all, no matter which one you choose to call but 
+//below one is not called automatically, you have to mention in gradle <name of task>
+
+task gradles << {
+
+	println "gradle is running"
+	
+}
+
