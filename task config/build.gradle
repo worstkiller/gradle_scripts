@@ -1,0 +1,41 @@
+/
+* in this task we will create relationship with other task
+*/
+task wakeup{
+	doLast {
+	println "waking up"
+	}
+}
+
+task gotoOffice{
+	dependsOn "eatBreakFast"
+	shouldRunAfter "eatBreakFast"
+	doLast {
+	println "going office"
+	}
+}
+
+task eatBreakFast{
+	dependsOn  = ["readNewsPaper"]
+	mustRunAfter  "readNewsPaper"
+	doLast {
+	println "eating breakfast"
+	}
+}
+
+task readNewsPaper {
+dependsOn "wakeup"
+	doLast {
+	println "reading news paper"
+	}
+}
+
+task backFromOffice{
+	dependsOn "gotoOffice"
+	doLast 
+	{
+		println "coming back from office"
+	}
+}
+
+//now we have to make some relationship within these tasks
