@@ -12,6 +12,19 @@
 	doLast {
 		
 	from 'from'
+	include '*.txt'
+	into 'into'
+	
+	}
+		
+ }
+ 
+  task copyZipFiles(type: Copy){
+ 
+	dependsOn 'zipFiles'
+ 
+	doLast {
+	from 'from'
 	include '*.zip'
 	into 'into'
 	
@@ -19,9 +32,13 @@
 		
  }
  
+ //this will
+ 
  task zipFiles (type : Zip){
  
 	baseName 'newZip'
-	destinationDir  = file('from')
+	destinationDir  = file('into')
+	include '*.txt'
+	from 'from'	
  
  }
