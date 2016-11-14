@@ -1,0 +1,27 @@
+/* this type of task allows to use some of the built in functionalities 
+ to use out of the box
+ */
+ 
+ 
+ //for example this program will copy all the .txt files from from dir to into dir.
+ 
+ task copyFiles(type: Copy){
+ 
+	dependsOn 'zipFiles'
+ 
+	doLast {
+		
+	from 'from'
+	include '*.zip'
+	into 'into'
+	
+	}
+		
+ }
+ 
+ task zipFiles (type : Zip){
+ 
+	baseName 'newZip'
+	destinationDir  = file('from')
+ 
+ }
