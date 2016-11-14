@@ -5,34 +5,29 @@
  
  //for example this program will copy all the .txt files from from dir to into dir.
  
+ 
  task copyFiles(type: Copy){
  
-	dependsOn 'zipFiles'
- 
-	doLast {
-		
 	from 'from'
 	include '*.txt'
 	into 'into'
-	
-	}
 		
  }
  
-  task copyZipFiles(type: Copy){
+ //muliple files copy
  
-	dependsOn 'zipFiles'
+ task copyMultipleFiles(type: Copy){
  
-	doLast {
-	from 'from'
-	include '*.zip'
+	from ('from')
+	from 'between'
+	include '*.txt'
 	into 'into'
-	
-	}
-		
+ 
  }
  
- //this will
+ 
+ // this example shows the tasks dependencies and task type example of zipping a file which we had done in previous lessons.
+ 
  
  task zipFiles (type : Zip){
  
@@ -40,5 +35,17 @@
 	destinationDir  = file('into')
 	include '*.txt'
 	from 'from'	
+ 
+ }
+ 
+ //this will zip multiple files from multiple sources, this can also be applied to copy task
+ 
+ task zipMultipleFiles (type : Zip){
+ 
+	baseName 'newMutipleZip'
+	destinationDir  = file('into')
+	include '*.txt'
+	from 'from'	
+	from  'between'
  
  }
