@@ -16,9 +16,11 @@ there is 3 ways to do this
 
 1. define the value of message in gradle.properties file
 
-2. define in build script, using ext
+2. define in build script, using ext https://docs.gradle.org/current/dsl/org.gradle.api.plugins.ExtraPropertiesExtension.html
 
 3. give dynamic parameters in command line argument using. gradle -q -PmessageCMDArgument="hi command line arg" parameterTask
+
+'parameterTask' is name of the task, 'messageCMDArgument' is name of the parameter
 
 */
 
