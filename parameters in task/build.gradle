@@ -1,5 +1,5 @@
 /*
-this task will allow us to define parameters in gradle tasks 
+this task will allow us to define parameters in gradle tasks, define the properties in gradle and allow to define the command line args 
 */
 
 task parameterTask<<{
