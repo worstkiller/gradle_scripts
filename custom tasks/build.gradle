@@ -1,0 +1,21 @@
+/* in this task we will create our custom task, every task in gradle is a class extending DefaultTask.
+ so we will be doing also same.
+*/
+
+class PrintMessage extends DefaultTask{
+
+	def var
+	
+	@TaskAction
+	void print(){
+	println "hi, i am $var"
+	}
+	
+
+}
+
+task printIT(type : PrintMessage){
+
+	var = 'developer'
+
+}
