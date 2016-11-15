@@ -1,0 +1,30 @@
+/*
+this task will allow us to define parameters in gradle tasks 
+*/
+
+task parameterTask<<{
+
+	println messageBuild
+	println messageGradle
+	println messageCMDArgument
+
+}
+
+/*if you run this, you will be presented with error, so need to define the message variable 
+
+there is 3 ways to do this
+
+1. define the value of message in gradle.properties file
+
+2. define in build script, using ext
+
+3. give dynamic parameters in command line argument using. gradle -q -PmessageCMDArgument="hi command line arg" parameterTask
+
+*/
+
+ext{
+
+	messageBuild = 'i am message from ext'
+	
+}
+
