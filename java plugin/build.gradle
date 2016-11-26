@@ -1,0 +1,11 @@
+/* in this example we will be showing how to apply the java plugin in gradle to compile the java source code
+*/
+
+apply plugin: "java"
+
+task executeCode(type: JavaExec){
+
+	main = "com.gradleExample.gradle.Person"
+	classpath = sourceSets.main.runtimeClasspath
+
+}
