@@ -1,3 +1,9 @@
+# gradle_scripts
+
+this example repo is just another bunch of exmaples for gradle for java and android. fork it and learn this useful gradle basics.
+
+## installations
+
 I assume you have java already installed on your machine so Please follow the instructions to start with gradle scripts.
 first as usual download the gradle package or zip from below link 
 https://github.com/spring-guides/gs-gradle/archive/master.zip
@@ -35,6 +41,9 @@ To see more detail about a task, run gradle help --task <task>
 BUILD SUCCESSFUL
 ______________________________________________________________
 and yes now you are really good to go.
+
+## example
+
 To run your first program  choose your favorite editor, mine is notepad++.
 create a file and paste this hello script.
 _____________________________________________________________
@@ -126,3 +135,31 @@ BUILD SUCCESSFUL
 
 
 okeh now you have successfully completed your first script. congratulations!!!!
+
+## Usage
+
+fork project or clone it and start working. 
+
+## Contributing
+
+if there is something you would like to add, you are welcome.
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
+
+## History
+
+version 1.0
+
+## Credits
+
+udacity: https://udacity.com
+gradle : https://gradle.org
+android: https://developer.android.com/index.html
+
+## License
+
+Openlicensing
+
