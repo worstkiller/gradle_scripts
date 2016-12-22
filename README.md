@@ -1,4 +1,4 @@
-# gradle_scripts
+# Gradle Scripts
 
 this example repo is just another bunch of exmaples for gradle for java and android. fork it and learn this useful gradle basics.
 
